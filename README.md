@@ -86,6 +86,8 @@ Allows users to manage study metadata and interact with an AI-powered chatbot. T
 - Docker
   - refer to:'docker-compose.yml' and 'Dockerfile'
 
+## Missing
+- Glove embedding text file is not included because it is too large
 
 ## Installation
 
