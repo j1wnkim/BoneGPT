@@ -1,0 +1,6 @@
+{
+    "databaseName": "het50",
+    "tableName": "controlmale_Vertebra",
+    "xAxisColumn": "BV\/TV",
+    "yAxisColumn": "Tb.Sp"
+}
