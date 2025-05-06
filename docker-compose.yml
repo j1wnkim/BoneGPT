@@ -1,0 +1,49 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: php:8.2-fpm
+    container_name: laravel-app
+    ports:
+      - "9001:9000"  # Add this line to expose port 9000
+    volumes:
+      - .:/var/www
+  # apache:
+  #   image: httpd:latest
+  #   container_name: laravel-apache
+  #   volumes:
+  #     - .:/var/www
+  #     - ./apache-config.conf:/usr/local/apache2/conf/httpd.conf
+  #     - ./rossa-cert:/etc/ssl/certs
+  #     - ./logs:/var/log/apache2
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   depends_on:
+  #     - app
+  #   entrypoint: /bin/bash
+    
+    # networks:
+    #   - sdp
+
+  # nginx:
+  #   image: nginx:latest
+  #   container_name: laravel-nginx
+  #   ports:
+  #     - "${SSL_PORT}:443"
+  #     - "${HTTP_PORT}:80"
+  #   volumes:
+  #     - .:/var/www
+  #     - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+  #     - /home/sdp/rossa-cert/rossa_soc_uconn_edu.pem
+  #     - /home/sdp/rossa-cert/rossa.soc.uconn.edu.key
+  #   depends_on:
+  #     - app
+  #   networks:
+  #     - sdp
+
+# networks:
+#   sdp:
+#     name: sdp
+#     driver: bridge
