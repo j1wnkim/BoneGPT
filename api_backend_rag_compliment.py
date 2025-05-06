@@ -221,7 +221,7 @@ In list 4, list only the most relevant subject areas in the paper use the exact 
 
 def chat_with_bot_structured_6_generalized(question, question_list, Collection_list, k =5, text = None): ## construct a question_list and collection_list as well to make our 
                                                            ## function more generalized and easier to use.      
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -276,7 +276,7 @@ def chat_with_bot_structured_6_compliment(message = """In the experimental categ
              "Compares different light/dark cycles", 
              "Compares different mouse strains"]
     
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -395,7 +395,7 @@ def chat_with_bot_structured_6_compliment(message = """In the experimental categ
         
 def chat_with_bot_structured_6_generalized_compliment(question, question_list, Collection_list, k =5, text = None): ## construct a question_list and collection_list as well to make our 
                                                            ## function more generalized and easier to use.      
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -437,7 +437,7 @@ def chat_with_bot_structured_6_generalized_compliment(question, question_list, C
 def chat_with_bot_structured_3_compliment(message = """Based on the paper, give me the investigators information that is returned by a tuple where each tuple is formatted as (first_name, last_name, email, department, organization, country).
                                      Only answer with tuples and if there's multiple tuples, use commas "," after each tuple. And if you don't know the country name, just write 'Afghanistan' without the quotation marks. Write 'I don't know' for the other fields you have no clue on.""", k: int = 5, faiss_index = faiss_index, document_chunks = document_chunks):
     # Initialize your LLM
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -474,7 +474,7 @@ def chat_with_bot_structured_3_compliment(message = """Based on the paper, give 
 def chat_with_bot_structured_4_compliment(message = """Based on the paper, tell me the number of experiment group where they each should contain information about sex and age in weeks answer.
                                      Answer strictly with a tuple format (sex, weeks) and list them with a "-". No additional text.""", k: int = 5, faiss_index = faiss_index, document_chunks = document_chunks):
 
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -505,7 +505,7 @@ def chat_with_bot_structured_4_compliment(message = """Based on the paper, tell 
 
 def chat_with_bot_structured_5_compliment(message = "Based on the paper, select the following type of analyses that were performed to phenotype the mice if mentioned:", k: int = 5, faiss_index = faiss_index, document_chunks = document_chunks):
     # Initialize your LLM
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
