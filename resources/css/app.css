@@ -1,0 +1,155 @@
+/* Remove spinner arrows from number inputs */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    margin: 0 !important;
+}
+
+input[type=number] {
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+}
+
+main {
+    min-height: 80vh;
+}
+
+.hover-nav-link:hover {
+    color: black!important;
+    opacity: 1!important;
+}
+
+:root {
+    --bs-body-font-size: 0.96rem;
+}
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Apply fonts to body and headings */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Bootstrap theme customization */
+.bg-primary {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+.btn-primary {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3 !important;
+    border-color: #004085 !important;
+}
+
+.card {
+    border: 1px solid #dee2e6 !important;
+    background-color: #fff !important;
+    color: #212529 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-header {
+    background-color: #f8f9fa !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.card-header {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #003f5c !important; /* Navy */
+}
+
+.card-title {
+    font-size: 1.0rem !important;
+    font-weight: 700 !important;
+}
+
+.card-body {
+    padding: 1.25rem !important;
+}
+
+.card-footer {
+    background-color: #f8f9fa !important;
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.card, .btn, .bg-primary {
+    border-radius: 0 !important;
+}
+
+.alert {
+    border-radius: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+.nav-link {
+    color: #003f5c !important; /* Navy */
+
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0077b6 !important; /* UConn Blue */
+    text-decoration: underline !important;
+}
+
+
+.hero-section {
+    background: linear-gradient(to right, #003f5c, #0077b6);
+    color: white;
+    border-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.hero-section h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.study-nav {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.study-nav .navbar {
+    padding: 0.5rem 1rem;
+    background-color: #003f5c; /* Navy */
+    border-radius: 0;
+    color: white; /* White text */
+}
+
+.study-nav .navbar a {
+    color: white !important; /* White links */
+}
+
+.study-nav .navbar a:hover {
+    color: #ffcc00 !important; /* Gold on hover */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
