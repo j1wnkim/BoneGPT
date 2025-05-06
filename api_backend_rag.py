@@ -231,7 +231,7 @@ JSON_DEFAULT_PATH = "/home/sdp/laravel-app/public"
 
 @app.post("api/chatbot")
 async def chat_with_bot(message: str = Form(...), k: int = 5):
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(model = "gpt-4o-mini", api_key = CHATGPT_APIKEY, temperature = 0.5, max_tokens = 400)
 
     template = return_template() # get the template.
@@ -361,7 +361,7 @@ What are the conflicts of interest of the paper?
 When was the paper published, answer ONLY in the format: "MM/DD/YYYY" no puncutation whatsoever?
 Has this study been published, answer only yes or no without punctuation""", k: int = 5):
     # Initialize your LLM
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -424,7 +424,7 @@ In list 4, strictly list only the most directly relevant subject areas in the pa
 
 
     Collection_List = [list1, list2, list3, list4]
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -472,7 +472,7 @@ In list 4, strictly list only the most directly relevant subject areas in the pa
 def chat_with_bot_structured_3(message = """Based on the paper, give me the investigators involved in the paper using tuples where each tuple is formatted as (first_name, last_name, email, department, organization, country). Find their corresponding first name, last name, their email, department, organization, and country.
                                      These informations should be on first page! Only answer with tuples and if there's multiple tuples, use commas "," after each tuple. And if you don't know the country infer based on department location or write 'United States'. Write 'NULL' for the other fields you have no clue on.""", k: int = 5):
     # Initialize your LLM
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -517,7 +517,7 @@ def chat_with_bot_structured_4(message = """In the experimental category list, p
              "Compares different light/dark cycles",
              "Compares different mouse strains"]
 
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
 
     llm = ChatOpenAI(
         model="gpt-4o-mini",
@@ -574,7 +574,7 @@ def chat_with_bot_structured_4(message = """In the experimental category list, p
 
 def chat_with_bot_structured_4_generalized(question, question_list, Collection_list, k =5, text = None): ## construct a question_list and collection_list as well to make our
                                                            ## function more generalized and easier to use.
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -614,7 +614,7 @@ def chat_with_bot_structured_5(message = """Based on the paper, list the experim
                                      Answer strictly with a tuple format (sex, weeks) and list them with a "-". sex is denoted as 1 as male and 0 for female. If you can't
                                      find the sex and/or age, omit that answer.""", k: int = 5):
 
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
@@ -649,7 +649,7 @@ def chat_with_bot_structured_5(message = """Based on the paper, list the experim
 #@app.post("/api/generate-study-5") # /generate-study-5 ## phenotype analysis
 def chat_with_bot_structured_6(message = "Based on the paper, select the following type of analyses that were performed to phenotype the mice if mentioned:", k: int = 5):
     # Initialize your LLM
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
