@@ -18,7 +18,7 @@ import psycopg2
 app = FastAPI()
 logger = logging.getLogger(__name__)
 
-# CHATGPT_APIKEY = "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"
+# CHATGPT_APIKEY = ""
 
 # Allow frontend to connect
 app.add_middleware(
@@ -119,7 +119,7 @@ rows = cursor.fetchall()
 # for row in rows:
 #     print(row)
 
-client = genai.Client(api_key="AIzaSyAu0Q7b71upte0wvIjHde2IAfKmiilBLTA")
+client = genai.Client(api_key="")
 chat = client.chats.create(
     model="gemini-2.0-flash",
     config=types.GenerateContentConfig(
