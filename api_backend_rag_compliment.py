@@ -120,7 +120,7 @@ What are the conflicts of interest of the paper?
 When was the paper published, answer ONLY in the format: "MM/DD/YYYY" no puncutation whatsoever?
 Has this study been published, answer only yes or no without punctuation""", k: int = 5, faiss_index = faiss_index, document_chunks = document_chunks):
     # Initialize your LLM
-    CHATGPT_APIKEY = "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"
+    CHATGPT_APIKEY = ""
     llm = ChatOpenAI(
         model="gpt-4o-mini",
         api_key=CHATGPT_APIKEY,
