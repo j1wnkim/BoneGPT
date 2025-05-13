@@ -88,7 +88,8 @@ Allows users to manage study metadata and interact with an AI-powered chatbot. T
 
 ## Missing
 - Glove embedding text file is not included because it is too large
-
+- Download the Glove embeddings through https://www.kaggle.com/datasets/thanakomsn/glove6b300dtxt
+- Possible improvement: Go try to implement OpenAI's API embedding.  
 ## Installation
 
 ### 1. Clone the Repository
