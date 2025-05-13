@@ -89,7 +89,15 @@ Allows users to manage study metadata and interact with an AI-powered chatbot. T
 ## Missing
 - Glove embedding text file is not included because it is too large
 - Download the Glove embeddings through https://www.kaggle.com/datasets/thanakomsn/glove6b300dtxt
-- Possible improvement: Go try to implement OpenAI's API embedding.  
+- Possible improvement: Go try to implement OpenAI's API embedding.
+
+## Retrieval Augmented Generation: 
+- Main purpose is to give precise detailed answer by feeding additional relevant information from the text provided by the user.
+- First construct a prompt template that includes context as {context} and question as {question} in the string provided.
+  Use ChatPromptTemplate.from_template() for complete instantiation.
+- Convert the document with vector embedding and store it with faiss_index.
+- faiss_index finds the relevant parts of the document that are relevant to the query and llm will output appropriate response based on combined prompt.
+- Extensive tutorial: https://www.youtube.com/watch?v=EFUE4DHiAPM&t=1858s 
 ## Installation
 
 ### 1. Clone the Repository
